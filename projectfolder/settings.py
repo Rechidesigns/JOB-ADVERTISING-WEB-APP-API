@@ -94,9 +94,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'de8o4rhbi0gisj',
         'USER': 'cxmdgpokvlmlqu',
-        'PORT': '5432',
         'PASSWORD': 'c839570f66bcaa2063ab43fe4c4cbebfc35a909b60c041c7fe8632ecec69397c',
         'HOST': 'ec2-52-71-23-11.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -146,7 +146,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = "account.User"
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 EMAIL_HOST = 'smtp.gmass.co'
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
