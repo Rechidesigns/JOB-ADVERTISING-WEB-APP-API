@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['job-advert-site.herokuapp.com', '127.0.0.1']
 
@@ -92,8 +92,8 @@ WSGI_APPLICATION = 'projectfolder.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'USER': 'cxmdgpokvlmlqu',
         'NAME': 'de8o4rhbi0gisj',
+        'USER': 'cxmdgpokvlmlqu',
         'PORT': '5432',
         'PASSWORD': 'c839570f66bcaa2063ab43fe4c4cbebfc35a909b60c041c7fe8632ecec69397c',
         'HOST': 'ec2-52-71-23-11.compute-1.amazonaws.com',
