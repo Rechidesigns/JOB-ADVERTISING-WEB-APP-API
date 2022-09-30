@@ -66,7 +66,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'projectfolder.urls'
-# jofwdjfwjifwfwefejfhj?
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -199,3 +199,15 @@ CLOUDINARY_STORAGE = {
     'API_KEY': os.getenv('CLOUD_API'),
     'API_SECRET': os.getenv('CLOUD_SECRET_KEY'),
 }
+
+
+
+
+
+
+
+# CLOUDINARY_STORAGE = {
+#     'CLOUD_NAME': os.getenv('CLOUD_NAME'),
+#     'API_KEY': os.getenv('CLOUD_API'),
+#     'API_SECRET': os.getenv('CLOUD_SECRET_KEY'),
+# }
